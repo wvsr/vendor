@@ -38,7 +38,9 @@ function Terms() {
       </div>
       <article className='wrapper py-5 text-[#ECECF1] max-w-3xl mx-auto space-y-12'>
         <div className='space-y-3'>
-          <h1 className='text-4xl'>Security</h1>
+          <h1 className='text-2xl font-semibold md:font-normal md:text-4xl'>
+            Security
+          </h1>
           <p>
             Every day, thousands of people design, ship websites made in Framer.
             Your work is valuable, and we strive to ensure that your privacy and
@@ -295,7 +297,9 @@ function Terms() {
             </p>
           </div>
           <div className='space-y-3'>
-            <p className='text-3xl'>Infrastructure and network security</p>
+            <p className='text-2xl md:text-3xl'>
+              Infrastructure and network security
+            </p>
             <div className='space-y-2'>
               <p className='text-xl'>Transport security</p>
               <p>
@@ -350,7 +354,7 @@ function Terms() {
           </div>
         </div>
         <div className='space-y-3'>
-          <h3 className='text-3xl'>Organizational security</h3>
+          <h3 className='text-2xl md:text-3xl'>Organizational security</h3>
           <div className='space-y-2'>
             <p className='text-base font-bold'>Security training</p>
             <p>
@@ -416,7 +420,7 @@ function Terms() {
           </div>
         </div>
         <div className='space-y-3'>
-          <h2 className='text-3xl'>Operational security</h2>
+          <h2 className='text-2xl md:text-3xl'>Operational security</h2>
           <div className='space-y-2'>
             <p className='text-base'>Backups and disaster recovery</p>
             <p>
@@ -452,7 +456,7 @@ function Terms() {
           </div>
         </div>
         <div className='space-y-3'>
-          <h1 className='text-3xl'>Enterprise security</h1>
+          <h1 className='text-2xl md:text-3xl'>Enterprise security</h1>
           <p>
             Framer performs a periodic risk analysis and assessment to ensure
             that our information security policies and practices meet the
@@ -483,7 +487,9 @@ function Terms() {
           </div>
         </div>
         <div className='space-y-3'>
-          <h3 className='text-3xl'>Security vulnerability disclosure</h3>
+          <h3 className='text-2xl md:text-3xl'>
+            Security vulnerability disclosure
+          </h3>
           <p>
             If you would like to disclose a potential security vulnerability or
             have security concerns about a Framer product, please reach out to
@@ -493,7 +499,7 @@ function Terms() {
           </p>
         </div>
         <div className='space-y-4'>
-          <h4 className='text-3xl'>Reset Settings</h4>
+          <h4 className='text-2xl md:text-3xl'>Reset Settings</h4>
           <p className='text-sm'>
             Click the button below if you want to clear your existing cookie
             settings.
