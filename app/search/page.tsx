@@ -3,8 +3,36 @@ import Logo from '@/public/logo.png'
 import ChatGpt from '@/public/chatgpt.webp'
 import Image from 'next/image'
 
+const aiList = ['ChatGPT', 'Thropic', 'Gemini']
+
+function SearchBar() {
+  return (
+    <div className='wrapper w-full space-y-3'>
+      <div className='flex gap-3 bg-[#2B2B2B] text-[#999999] items-center px-2 py-2 rounded-xl overflow-hidden max-w-full md:max-w-md w-full'>
+        <IoIosSearch className='text-xl' />
+        <input
+          type='text'
+          className='bg-transparent outline-none w-full text-gray-200'
+          placeholder='Search…'
+        />
+      </div>
+      <div className='flex gap-2 flex-wrap w-full text-gray-200'>
+        {aiList.map((e, i) => {
+          return (
+            <div
+              key={i}
+              className='px-3 py-1.5 border border-gray-700 rounded-md text-sm'
+              role='button'
+            >
+              {e}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
 function Search() {
-  const aiList = ['ChatGPT', 'Thropic', 'Gemini']
   return (
     <main className='bg-black'>
       <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-700'>
@@ -12,44 +40,30 @@ function Search() {
           <div className='pt-3'>
             <Image src={Logo} alt='logo' width={200} />
           </div>
-          <div className='w-full space-y-3'>
-            <div className='flex gap-3 bg-[#2B2B2B] text-[#999999] items-center px-2 py-2 rounded-xl overflow-hidden max-w-xl w-full'>
-              <IoIosSearch className='text-xl' />
-              <input
-                type='text'
-                className='bg-transparent outline-none w-full text-gray-200'
-                placeholder='Search…'
-              />
-            </div>
-            <div className='flex gap-2 flex-wrap w-full text-gray-200'>
-              {aiList.map((e, i) => {
-                return (
-                  <div
-                    key={i}
-                    className='px-3 py-1.5 border border-gray-700 rounded-md text-sm'
-                    role='button'
-                  >
-                    {e}
-                  </div>
-                )
-              })}
-            </div>
+          <div className='w-full hidden md:block'>
+            <SearchBar />
           </div>
         </div>
         <div>
           <button className='btn'>Launch</button>
         </div>
       </header>
+      <div className='w-full md:hidden block py-3'>
+        <SearchBar />
+      </div>
 
       <article className='wrapper py-5 text-[#ECECF1]'>
-        <p>ChatGPT 3.5</p>
+        <select name='model' className='bg-transparent border-none'>
+          <option value=''>ChatGpt 3.5</option>
+          <option value=''>ChatGpt 4</option>
+        </select>
 
         <div className='max-w-2xl py-8 space-y-6'>
           <div className='grid grid-cols-12 gap-3 items-start'>
             <div className='col-span-1 flex justify-end'>
               <img
                 src='https://i.pravatar.cc/50'
-                className='rounded-full w-2/3 h-auto'
+                className='rounded-full w-full md:w-2/3 h-auto'
                 alt=''
               />
             </div>
@@ -60,7 +74,11 @@ function Search() {
           </div>
           <div className='grid grid-cols-12 gap-3 items-start'>
             <div className='col-span-1 flex justify-end'>
-              <Image src={ChatGpt} className='w-2/3 h-auto' alt='chatgpt' />
+              <Image
+                src={ChatGpt}
+                className='w-full md:w-2/3 h-auto'
+                alt='chatgpt'
+              />
             </div>
             <div className='col-span-10'>
               <p className='font-bold'>ChatGpt</p>
