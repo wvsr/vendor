@@ -2,8 +2,18 @@ import { IoIosSearch } from 'react-icons/io'
 import Logo from '@/public/logo.png'
 import ChatGpt from '@/public/chatgpt.webp'
 import Image from 'next/image'
+import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 function Terms() {
+  const sectionList = [
+    { name: 'Terms of Service', href: 'termsofservice' },
+    { name: 'Privacy Statement', href: 'privacystatement' },
+    { name: 'Data Processing', href: 'dataprocessing' },
+    { name: 'Addendum', href: 'addendum' },
+    { name: 'Sub-Processors', href: 'sub-processors' },
+    { name: 'Cookie Policy', href: 'cookiepolicy' },
+  ]
   return (
     <main className='bg-black'>
       <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-900'>
@@ -17,6 +27,15 @@ function Terms() {
         </div>
       </header>
 
+      <div className='flex gap-3 max-w-3xl flex-wrap mx-auto py-4 wrapper'>
+        {sectionList.map((e, i) => {
+          return (
+            <Link href={'#' + e.href} key={i} className='text-gray-300'>
+              {e.name}
+            </Link>
+          )
+        })}
+      </div>
       <article className='wrapper py-5 text-[#ECECF1] max-w-3xl mx-auto space-y-12'>
         <div className='space-y-3'>
           <h1 className='text-4xl'>Security</h1>
@@ -473,8 +492,16 @@ function Terms() {
             may have. You may encrypt your messages using our PGP public key.
           </p>
         </div>
+        <div className='space-y-4'>
+          <h4 className='text-3xl'>Reset Settings</h4>
+          <p className='text-sm'>
+            Click the button below if you want to clear your existing cookie
+            settings.
+          </p>
+          <button className='btn'>Reset cookie settings</button>
+        </div>
       </article>
-      <footer></footer>
+      <Footer />
     </main>
   )
 }
