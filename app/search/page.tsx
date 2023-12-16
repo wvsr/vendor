@@ -1,8 +1,13 @@
+import { GrPowerReset } from 'react-icons/gr'
+import { BiDislike } from 'react-icons/bi'
+import { BiLike } from 'react-icons/bi'
+import { LuClipboard } from 'react-icons/lu'
 import { IoIosSearch } from 'react-icons/io'
 import Logo from '@/public/logo.png'
 import ChatGpt from '@/public/chatgpt.webp'
 import Image from 'next/image'
-
+import Footer from '@/components/Footer'
+import Link from 'next/link'
 const aiList = ['ChatGPT', 'Thropic', 'Gemini']
 
 function SearchBar() {
@@ -38,7 +43,9 @@ function Search() {
       <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-700'>
         <div className='flex gap-3 w-full'>
           <div className='pt-3'>
-            <Image src={Logo} alt='logo' width={200} />
+            <Link href='/'>
+              <Image src={Logo} alt='logo' width={200} />
+            </Link>
           </div>
           <div className='w-full hidden md:block'>
             <SearchBar />
@@ -142,11 +149,17 @@ function Search() {
                 debitis officia tenetur voluptate, totam error, magnam
                 molestias.
               </p>
+              <div className='flex gap-2 mt-4'>
+                <LuClipboard />
+                <BiLike />
+                <BiDislike />
+                <GrPowerReset />
+              </div>
             </div>
           </div>
         </div>
       </article>
-      <footer></footer>
+      <Footer />
     </main>
   )
 }
