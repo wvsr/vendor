@@ -44,3 +44,20 @@
 .link {
   color: #0099ff;
 }
+.partner_hero {
+  background: #033363;
+  background-image: radial-gradient(
+    35.5% 50.9% at 50% 50%,
+    rgba(0, 136, 255, 0.3) 0%,
+    #060010 100%
+  );
+}
+
+.sellgpt_pink {
+  background: linear-gradient(270deg, #f06 0%, rgba(195, 0, 155, 0) 100%),
+    radial-gradient(132.8% 150% at 50% 50%, #90f 0%, #fd7702 100%);
+}
+.sellgpt_blue {
+  background: linear-gradient(270deg, #09f 0%, rgba(195, 0, 155, 0) 100%),
+    radial-gradient(132.8% 150% at 50% 50%, #0788ff 0%, #90f 100%);
+}
