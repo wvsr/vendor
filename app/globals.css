@@ -61,3 +61,23 @@
   background: linear-gradient(270deg, #09f 0%, rgba(195, 0, 155, 0) 100%),
     radial-gradient(132.8% 150% at 50% 50%, #0788ff 0%, #90f 100%);
 }
+.sellgpt_orange {
+  background: radial-gradient(132.8% 150% at 50% 50%, #fe0222 0%, #fd7702 100%);
+}
+
+.form {
+  background: radial-gradient(
+    35.5% 50.9% at 50% 50%,
+    rgba(102, 0, 255, 0.3) 0%,
+    #060010 100%
+  );
+}
+
+.form_input_partner {
+  width: 100%;
+  border-radius: 8px;
+  background: #3a196d;
+  padding: 10px 10px;
+  outline: none;
+  @apply placeholder-[#757575];
+}

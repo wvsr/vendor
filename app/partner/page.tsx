@@ -9,6 +9,9 @@ import SellPluginGetKnow from '@/public/partner/sellPluginGetKnow.png'
 import HowItWorkSellPlugin from '@/components/partner/HowItWorkSellPlugin'
 import HowItWorkShareLink from '@/components/partner/HowItWorkShareLink'
 import HowItWorkSellGpt from '@/components/partner/HowItWorkSellGpt'
+import YoutubePost from '@/public/partner/youtubePost.png'
+import Tweet from '@/public/partner/tweet.png'
+import Footer from '@/components/Footer'
 
 function Partner() {
   return (
@@ -134,20 +137,28 @@ function Partner() {
             Make money from every subscription <br />
             we sell through your referral link.
           </p>
-          <div className='sellgpt_blue grid grid-cols-12 max-w-5xl mx-auto rounded-2xl'>
-            <div className='col-span-5 space-y-4 py-12 px-12'>
-              <p className='text-2xl'>Ship your AI plugin.</p>
-              <p className='opacity-95'>
-                Add your plugin to vendor to attract new users, choose your
-                price and get paid out monthly.
-              </p>
+          <div className='grid grid-cols-2 max-w-5xl mx-auto gap-4'>
+            <div className='sellgpt_orange rounded-2xl space-y-2 flex flex-col justify-between gap-4'>
+              <div className='space-y-2 px-6 py-5'>
+                <p className='text-xl'>Video</p>
+                <p className='text-sm opacity-75'>
+                  Create tutorial, comparison, or walkthrough videos and add
+                  your referral link to the description.
+                </p>
+              </div>
+              <div className='flex justify-end items-end'>
+                <Image src={YoutubePost} alt='YoutubePost' />
+              </div>
             </div>
-            <div className='col-span-7 pt-10 flex justify-end items-end'>
-              <Image
-                src={SellPlugin}
-                alt='SellPink'
-                className='w-full h-auto'
-              />
+            <div className='bg-[#131313] rounded-2xl space-y-2'>
+              <div className='space-y-2 px-6 py-6'>
+                <p className='text-xl'>Social</p>
+                <p className='text-sm opacity-75'>
+                  Talk about us on X, TikTok, Instagram or write a post on
+                  Medium and use your link to point to Vendor.
+                </p>
+              </div>
+              <Image src={Tweet} alt='tweet' />
             </div>
           </div>
           <div className='grid grid-cols-12 max-w-5xl mx-auto gap-4'>
@@ -170,6 +181,60 @@ function Partner() {
           </div>
         </div>
       </section>
+      <section className='py-24 form text-gray-200'>
+        <div className='max-w-6xl mx-auto space-y-8'>
+          <div className='space-y-4'>
+            <p className='text-4xl text-center'>Become a partner today.</p>
+            <p className='text-base text-center opacity-75'>
+              Join today to start making money and get access to our <br />
+              exclusive partner channel on the Vendor Community.
+            </p>
+          </div>
+          <div className='max-w-xl mx-auto space-y-3'>
+            <div className='grid grid-cols-2 gap-2'>
+              <div>
+                <input
+                  type='text'
+                  className='form_input_partner'
+                  placeholder='Name'
+                  name=''
+                  id=''
+                />
+              </div>
+              <div>
+                <input
+                  type='Email'
+                  className='form_input_partner'
+                  placeholder='Name'
+                  name=''
+                  id=''
+                />
+              </div>
+            </div>
+            <div>
+              <textarea
+                name=''
+                id=''
+                className='form_input_partner'
+                placeholder='Message'
+              ></textarea>
+            </div>
+            <div>
+              <input
+                type='text'
+                className='form_input_partner'
+                placeholder='X username'
+                name=''
+                id=''
+              />
+            </div>
+            <button className='w-full px-4 py-2 rounded-md bg-[#6600FF]'>
+              Apply now
+            </button>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main>
   )
 }
