@@ -27,3 +27,20 @@
 .wrapper {
   @apply px-4;
 }
+
+.hero {
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(
+      113.1% 211.5% at 50% 50%,
+      #0b014a 39.13%,
+      #0049b8 51.42%,
+      #3264e3 67.6%,
+      #0cf 77.37%,
+      #6effd3 90%,
+      #ecf138 100%
+    );
+}
+
+.link {
+  color: #0099ff;
+}
