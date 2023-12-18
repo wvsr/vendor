@@ -41,10 +41,10 @@ function Search() {
   return (
     <main className='bg-black'>
       <header className='flex justify-between items-start py-2.5 px-3 border-b border-[#3C4043]'>
-        <div className='flex gap-3 w-full'>
+        <div className='flex  gap-3 w-full'>
           <div className='pt-3 hidden md:block'>
             <Link href='/'>
-              <Image src={Logo} alt='logo' width={200} />
+              <Image src={Logo} alt='logo' width={150} />
             </Link>
           </div>
           <div className='pt-3 md:hidden flex items-center'>
