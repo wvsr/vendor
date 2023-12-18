@@ -99,7 +99,9 @@ function Partner() {
               <Image src={PricingGpt} alt='PricingGpt' />
             </div>
             <div className='rounded-2xl bg-[#131313] col-span-full md:col-span-4 py-8 space-y-4'>
-              <p className='text-xl px-8'>How it works</p>
+              <h5 className='text-xl px-8 text-center md:text-start'>
+                How it works
+              </h5>
               <div className='flex justify-center w-full'>
                 <HowItWorkSellGpt />
               </div>
@@ -148,7 +150,9 @@ function Partner() {
               />
             </div>
             <div className='rounded-2xl bg-[#131313] col-span-full md:col-span-4 py-8 space-y-4'>
-              <p className='text-xl px-8'>How it works</p>
+              <h5 className='text-xl px-8 text-center md:text-start'>
+                How it works
+              </h5>
               <div className='flex justify-center w-full'>
                 <HowItWorkSellPlugin />
               </div>
@@ -156,7 +160,7 @@ function Partner() {
           </div>
         </div>
       </section>
-      <section className='py-16'>
+      <section className='py-16 wrapper'>
         <div className='space-y-4 sm:space-y-7 text-gray-200'>
           <h2 className='text-2xl md:text-4xl text-white text-center'>
             Share your link.
@@ -165,22 +169,22 @@ function Partner() {
             Make money from every subscription <br />
             we sell through your referral link.
           </p>
-          <div className='grid grid-cols-2 max-w-5xl mx-auto gap-4'>
+          <div className='grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-4'>
             <div className='sellgpt_orange rounded-2xl space-y-2 flex flex-col justify-between gap-4'>
               <div className='space-y-2 px-6 py-5'>
-                <p className='text-xl'>Video</p>
+                <h4 className='text-xl'>Video</h4>
                 <p className='text-sm opacity-75'>
                   Create tutorial, comparison, or walkthrough videos and add
                   your referral link to the description.
                 </p>
               </div>
-              <div className='flex justify-end items-end'>
+              <div className='flex justify-end items-end ps-6'>
                 <Image src={YoutubePost} alt='YoutubePost' />
               </div>
             </div>
             <div className='bg-[#131313] rounded-2xl space-y-2'>
               <div className='space-y-2 px-6 py-6'>
-                <p className='text-xl'>Social</p>
+                <h4 className='text-xl'>Social</h4>
                 <p className='text-sm opacity-75'>
                   Talk about us on X, TikTok, Instagram or write a post on
                   Medium and use your link to point to Vendor.
@@ -190,7 +194,7 @@ function Partner() {
             </div>
           </div>
           <div className='grid grid-cols-12 max-w-5xl mx-auto gap-4'>
-            <div className='rounded-2xl bg-[#131313] col-span-8 flex flex-col justify-between'>
+            <div className='rounded-2xl bg-[#131313] col-span-full md:col-span-8 flex flex-col justify-between'>
               <div className='pt-6 px-12 space-y-3'>
                 <h5 className='text-2xl'>Blog Posts</h5>
                 <p className='opacity-70 text-sm'>
@@ -198,13 +202,17 @@ function Partner() {
                   website.
                 </p>
               </div>
-              <div className='flex justify-end'>
+              <div className='flex justify-end ps-10 pt-5 md:pt-0'>
                 <Image src={BlogPost} alt='PricingGpt' />
               </div>
             </div>
-            <div className='rounded-2xl bg-[#131313] col-span-4 py-8 space-y-4'>
-              <p className='text-xl px-8'>How it works</p>
-              <HowItWorkShareLink />
+            <div className='rounded-2xl bg-[#131313] col-span-full md:col-span-4 py-8 space-y-4'>
+              <h5 className='text-xl px-8 text-center md:text-start'>
+                How it works
+              </h5>
+              <div className='flex justify-center w-full'>
+                <HowItWorkShareLink />
+              </div>
             </div>
           </div>
         </div>
@@ -212,9 +220,9 @@ function Partner() {
       <section className='py-24 form text-gray-200 wrapper'>
         <div className='max-w-6xl mx-auto space-y-8'>
           <div className='space-y-4'>
-            <p className='text-2xl sm:text-3xl md:text-4xl text-center'>
+            <h5 className='text-2xl sm:text-3xl md:text-4xl text-center'>
               Become a partner today.
-            </p>
+            </h5>
             <p className='text-sm md:text-base text-center opacity-75'>
               Join today to start making money and get access to our <br />
               exclusive partner channel on the Vendor Community.
