@@ -49,10 +49,10 @@ function Partner() {
           <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center'>
             Earn money doing <br /> with AI plugins
           </h1>
-          <p className='text-center text-sm sm:text-base md:text-lg opacity-70'>
-            Create AI plugins to Earn recourcing payments <br />
-            earn 50% of every subscription you bring in. Join our community for
-            exciting job and project opportunities.
+          <p className='text-center text-sm sm:text-base md:text-lg opacity-70 max-w-xl mx-auto'>
+            Create AI plugins to Earn recourcing payments earn 50% of every
+            subscription you bring in. Join our community for exciting job and
+            project opportunities.
           </p>
           <button className='btn'>Apply for Partner</button>
         </div>
