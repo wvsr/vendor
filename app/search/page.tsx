@@ -26,7 +26,7 @@ function SearchBar() {
           return (
             <div
               key={i}
-              className='px-3 py-1.5 border border-gray-700 rounded-md text-sm'
+              className='px-3 py-1.5 border border-[#3C4043] rounded-md text-sm'
               role='button'
             >
               {e}
@@ -40,11 +40,16 @@ function SearchBar() {
 function Search() {
   return (
     <main className='bg-black'>
-      <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-700'>
+      <header className='flex justify-between items-start py-2.5 px-3 border-b border-[#3C4043]'>
         <div className='flex gap-3 w-full'>
-          <div className='pt-3'>
+          <div className='pt-3 hidden md:block'>
             <Link href='/'>
               <Image src={Logo} alt='logo' width={200} />
+            </Link>
+          </div>
+          <div className='pt-3 md:hidden flex items-center'>
+            <Link href='/'>
+              <Image src={Logo} alt='logo' width={100} />
             </Link>
           </div>
           <div className='w-full hidden md:block'>
