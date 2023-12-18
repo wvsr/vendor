@@ -1,4 +1,5 @@
 import Logo from '@/public/logo.png'
+import Link from 'next/link'
 import Image from 'next/image'
 import Hero from '@/public/partner/hero.png'
 import SellPink from '@/public/partner/sell_pink.png'
@@ -17,10 +18,27 @@ function Partner() {
   return (
     <main className='bg-black'>
       <div className='partner_hero'>
-        <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-900'>
-          <div className='flex gap-3 w-full'>
-            <div className='pt-3'>
-              <Image src={Logo} alt='logo' width={200} />
+        <header className='flex justify-between items-center py-2.5 px-3 border-b border-gray-900 '>
+          <div className='flex gap-3'>
+            <div className='hidden md:block'>
+              <Link href='/'>
+                <Image src={Logo} alt='logo' width={130} />
+              </Link>
+            </div>
+            <div className='md:hidden flex items-center'>
+              <Link href='/'>
+                <Image src={Logo} alt='logo' width={100} />
+              </Link>
+            </div>
+          </div>
+          <div className='hidden md:block'>
+            <div className='flex gap-3 text-[#8B8B8B]'>
+              <Link href='#'>Features</Link>
+              <Link href='#'>Resources</Link>
+              <Link href='#'>Community</Link>
+              <Link href='#'>Customers</Link>
+              <Link href='#'>Enterprise</Link>
+              <Link href='#'>Pricing</Link>
             </div>
           </div>
           <div>
@@ -28,10 +46,10 @@ function Partner() {
           </div>
         </header>
         <div className='space-y-8 text-gray-200 py-24 flex justify-center items-center flex-col'>
-          <h1 className='text-7xl text-center'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center'>
             Earn money doing <br /> with AI plugins
           </h1>
-          <p className='text-center text-lg opacity-70'>
+          <p className='text-center text-sm sm:text-base md:text-lg opacity-70'>
             Create AI plugins to Earn recourcing payments <br />
             earn 50% of every subscription you bring in. Join our community for
             exciting job and project opportunities.

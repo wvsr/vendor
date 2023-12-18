@@ -97,3 +97,12 @@ body {
     8px -84px 34px 0px rgba(0, 0, 0, 0.01),
     13px -132px 37px 0px rgba(0, 0, 0, 0);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}

@@ -73,10 +73,27 @@ function Framer() {
   return (
     <main className='bg-black'>
       <section className='hero'>
-        <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-900'>
-          <div className='flex gap-3 w-full'>
-            <div className='pt-3'>
-              <Image src={Logo} alt='logo' width={200} />
+        <header className='flex justify-between items-center py-2.5 px-3 border-b border-gray-900 '>
+          <div className='flex gap-3'>
+            <div className='hidden md:block'>
+              <Link href='/'>
+                <Image src={Logo} alt='logo' width={130} />
+              </Link>
+            </div>
+            <div className='md:hidden flex items-center'>
+              <Link href='/'>
+                <Image src={Logo} alt='logo' width={100} />
+              </Link>
+            </div>
+          </div>
+          <div className='hidden md:block'>
+            <div className='flex gap-3 text-[#8B8B8B]'>
+              <Link href='#'>Features</Link>
+              <Link href='#'>Resources</Link>
+              <Link href='#'>Community</Link>
+              <Link href='#'>Customers</Link>
+              <Link href='#'>Enterprise</Link>
+              <Link href='#'>Pricing</Link>
             </div>
           </div>
           <div>
@@ -84,15 +101,15 @@ function Framer() {
           </div>
         </header>
         <div className='space-y-8 text-gray-200 py-24'>
-          <h1 className='text-8xl text-center'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-center'>
             The internet is <br /> your canvas.
           </h1>
-          <p className='text-center text-lg'>
+          <p className='text-center text-sm md:text-lg opacity-60'>
             Framer is where teams design and publish stunning sites.
           </p>
-          <form className='w-full' onSubmit={handleSearch}>
+          <form className='w-full wrapper' onSubmit={handleSearch}>
             <div className='max-w-2xl mx-auto w-full bg-white/10 p-2 rounded-xl overflow-hidden'>
-              <div className='w-full flex bg-white rounded-xl py-2 px-3 overflow-hidden'>
+              <div className='w-full flex bg-white rounded-xl py-1.5 md:py-2 px-3 overflow-hidden'>
                 <input
                   type='text'
                   className='w-full flex-1 text-base focus:outline-none text-black'
@@ -111,7 +128,7 @@ function Framer() {
           alt='hero'
           className='px-5 max-w-6xl w-full mx-auto'
         />
-        <div className='flex justify-between flex-wrap max-w-5xl mx-auto mt-14 pb-12'>
+        <div className='flex justify-between max-w-5xl mx-auto mt-14 pb-12 gap-4 wrapper flex-wrap'>
           <div>
             <Image src={FirstLogo} alt='Logo 1' />
           </div>
@@ -138,11 +155,11 @@ function Framer() {
           </div>
         </div>
       </section>
-      <section className='bg-black py-14'>
-        <div className='grid grid-cols-2 text-gray-300 gap-6'>
+      <section className='bg-black py-14 wrapper'>
+        <div className='grid grid-cols-1 md:grid-cols-2 text-gray-300 gap-6'>
           <div className='flex justify-end'>
             <div className='space-y-7 max-w-lg'>
-              <h2 className='text-4xl text-white'>
+              <h2 className='text-2xl md:text-4xl text-white'>
                 Design stunning sites on a familiar canvas.
               </h2>
               <div className='space-y-2'>
@@ -176,8 +193,8 @@ function Framer() {
           </div>
         </div>
       </section>
-      <section className='py-14 text-gray-200 max-w-6xl mx-auto space-y-12'>
-        <h3 className='text-4xl max-w-4xl text-white'>
+      <section className='py-14 text-gray-200 max-w-6xl mx-auto space-y-12 wrapper'>
+        <h3 className='text-2xl md:text-4xl max-w-4xl text-white'>
           <span className=''>Deploy in seconds. </span>
           <span className='opacity-50'>
             Your site is fast out of the box and automatically optimized for
@@ -190,7 +207,7 @@ function Framer() {
           className='w-full h-auto'
         />
       </section>
-      <section className='py-14 text-gray-200 max-w-6xl mx-auto grid grid-cols-2 gap-24'>
+      <section className='py-14 text-gray-200 max-w-6xl mx-auto wrapper grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24'>
         <div className='flex gap-4'>
           <div>
             <div className='py-1 px-2 border border-gray-500 rounded-full w-fit'>
@@ -220,8 +237,8 @@ function Framer() {
           </p>
         </div>
       </section>
-      <section className='py-14 text-gray-200 max-w-6xl mx-auto space-y-12'>
-        <h3 className='text-4xl max-w-3xl text-white'>
+      <section className='py-14 text-gray-200 max-w-6xl mx-auto space-y-12 wrapper'>
+        <h3 className='text-2xl md:text-4xl max-w-4xl text-white'>
           <span className=''>Scale your site to any size </span>
           <span className='opacity-50'>
             with the built-in CMS, AI-powered localization, and site maintenance
@@ -229,14 +246,14 @@ function Framer() {
           </span>
         </h3>
         <div className='grid grid-cols-12 gap-8'>
-          <div className='col-span-8'>
+          <div className='col-span-full md:col-span-8'>
             <Image
               alt='NoCodeWebsiteTemplate'
               src={NoCodeWebsiteTemplate}
               className='w-full h-auto'
             />
           </div>
-          <div className='col-span-4'>
+          <div className='col-span-full md:col-span-4'>
             <div className='w-full h-full rounded-lg p-10 border border-gray-800/60 space-y-3'>
               <p className='link text-xl'>SEO & Performance</p>
               <p className='text-sm'>
@@ -250,7 +267,7 @@ function Framer() {
           </div>
         </div>
         <div className='grid grid-cols-12 gap-8'>
-          <div className='col-span-4'>
+          <div className='col-span-full md:col-span-4'>
             <div className='w-full h-full rounded-lg p-10 border border-gray-800/60 space-y-3'>
               <p className='link text-xl'>Site Management</p>
               <p className='text-sm'>
@@ -262,7 +279,7 @@ function Framer() {
               </div>
             </div>
           </div>
-          <div className='col-span-8'>
+          <div className='col-span-full md:col-span-8'>
             <Image
               alt='NoCodeWebsiteTemplate'
               src={DiscoverAnalyze}
@@ -271,9 +288,11 @@ function Framer() {
           </div>
         </div>
       </section>
-      <section className='text-gray-200 py-14 max-w-6xl mx-auto space-y-12'>
-        <h3 className='text-4xl text-center'>Our customers love us</h3>
-        <div className='grid grid-cols-2 gap-4'>
+      <section className='text-gray-200 py-14 max-w-6xl mx-auto space-y-12 wrapper'>
+        <h3 className='text-2xl md:text-4xl max-w-4xl text-white'>
+          Our customers love us
+        </h3>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <div className='w-full h-full rounded-lg p-4 border border-gray-800/60'>
             <div className='mb-8'>
               <ProductOfTheDay />
@@ -320,12 +339,12 @@ function Framer() {
           </ResponsiveMasonry>
         </div>
       </section>
-      <section className='text-gray-200 py-14 max-w-6xl mx-auto space-y-12'>
-        <div className='grid grid-cols-12'>
-          <h3 className='text-5xl col-span-5'>
+      <section className='text-gray-200 py-14 max-w-6xl mx-auto space-y-12 wrapper'>
+        <div className='grid grid-cols-12 gap-8'>
+          <h3 className='text-2xl md:text-4xl max-w-4xl text-white col-span-full md:col-span-5'>
             Start your <br /> site for free.
           </h3>
-          <div className='grid grid-cols-2 col-span-7'>
+          <div className='grid grid-cols-2 col-span-full md:col-span-7'>
             <div className='space-y-3'>
               <svg
                 width='28'
