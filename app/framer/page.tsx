@@ -101,7 +101,7 @@ function Framer() {
           </div>
         </header>
         <div className='space-y-8 text-gray-200 py-24'>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-center'>
+          <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-8xl text-center font-[500]'>
             The internet is <br /> your canvas.
           </h1>
           <p className='text-center text-sm md:text-lg opacity-60'>
@@ -157,7 +157,7 @@ function Framer() {
       </section>
       <section className='bg-black py-14 wrapper'>
         <div className='grid grid-cols-1 md:grid-cols-2 text-gray-300 gap-6'>
-          <div className='flex justify-end'>
+          <div className='flex md:justify-end'>
             <div className='space-y-7 max-w-lg'>
               <h2 className='text-2xl md:text-4xl text-white'>
                 Design stunning sites on a familiar canvas.
