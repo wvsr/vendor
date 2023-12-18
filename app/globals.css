@@ -85,7 +85,3 @@
 body {
   background: #060010;
 }
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
-}
