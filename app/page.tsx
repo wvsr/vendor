@@ -32,7 +32,7 @@ export default function Home() {
     e.preventDefault()
   }
   return (
-    <main className='h-screen w-full search_background flex flex-col px-2'>
+    <main className='search_page h-screen w-full search_background flex flex-col px-2'>
       <header className='flex justify-between items-center py-4 px-5'>
         <div className='flex gap-3'>
           <ul className='flex gap-3 justify-center text-center flex-wrap'>
