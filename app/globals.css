@@ -84,4 +84,16 @@
 
 body {
   background: #060010;
+  position: relative;
+}
+
+.search_popup {
+  border-radius: 40px 40px 0px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #000;
+  box-shadow: 1px -5px 12px 0px rgba(255, 255, 255, 0.1),
+    2px -21px 21px 0px rgba(150, 149, 149, 0.09),
+    5px -47px 29px 0px rgba(0, 0, 0, 0.05),
+    8px -84px 34px 0px rgba(0, 0, 0, 0.01),
+    13px -132px 37px 0px rgba(0, 0, 0, 0);
 }

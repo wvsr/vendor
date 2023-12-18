@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/logo.png'
+import SmallLogo from '@/public/small_logo.png'
 import { useState } from 'react'
 
 export default function Home() {
@@ -129,7 +130,22 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <footer className='py-6 px-3'>
+      <div className='search_popup text-white text-center space-y-3 py-5 px-3 bottom-0 w-[98vw] block sm:hidden absolute'>
+        <div className='flex justify-center w-full'>
+          <div className='w-fit p-2 border border-gray-700 rounded-lg'>
+            <Image src={SmallLogo} alt='SmallLogo' />
+          </div>
+        </div>
+        <p className='text-lg font-semibold'>Vendor recommends using the App</p>
+        <p className='text-[#9E9E9E] text-sm'>
+          The App is a fast, simple, and secure. Try it?
+        </p>
+        <button className='btn w-full'>Try it</button>
+        <button className='px-3 py-2 rounded-md border border-gray-600 w-full text-gray-300'>
+          No thanks
+        </button>
+      </div>
+      <footer className='py-6 px-3 '>
         <ul className='flex gap-3 justify-center text-center flex-wrap'>
           {footerLinks.map((e, i) => (
             <Link href={e.link} key={i} className='text-sm text-gray-500'>
