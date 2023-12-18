@@ -83,9 +83,7 @@
 }
 
 body {
-  min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
+  background: #060010;
 }
 html {
   height: fill-available;
