@@ -105,3 +105,12 @@ h5,
 h6 {
   font-weight: 500;
 }
+
+.framer_footer {
+  background: rgb(0, 19, 58);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 19, 58, 1) 0%,
+    rgba(0, 6, 19, 0.5018382352941176) 100%
+  );
+}

@@ -64,14 +64,15 @@ function Framer() {
               </div>
             </div>
           </form>
-          <Image
-            src={HeroImage}
-            alt='HeroImage'
-            className='w-full h-auto wrapper'
-          />
         </div>
       </section>
-
+      <section className='wrapper'>
+        <Image
+          src={HeroImage}
+          alt='HeroImage'
+          className='w-full h-auto wrapper'
+        />
+      </section>
       <section className='bg-[#0FA958] py-24 px-12'>
         <div className='max-w-5xl mx-auto space-y-6 text-center'>
           <p className='text-sm font-medium'>Meet us in the browser</p>

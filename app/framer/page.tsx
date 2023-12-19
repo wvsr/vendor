@@ -18,7 +18,7 @@ import NoCodeWebsiteTemplate from '@/public/framer/1.png'
 import Slack from '@/public/framer/slack.png'
 import DiscoverAnalyze from '@/public/framer/4.png'
 import Link from 'next/link'
-import Footer from '@/components/Footer'
+import Footer from '@/components/framer/Footer'
 import SiteManagementSvg from '@/components/siteManagementSvg'
 import ProductOfTheDay from '@/components/ProductOfTheDay'
 
@@ -344,7 +344,7 @@ function Framer() {
           <h3 className='text-2xl md:text-4xl max-w-4xl text-white col-span-full md:col-span-5'>
             Start your <br /> site for free.
           </h3>
-          <div className='grid grid-cols-2 col-span-full md:col-span-7'>
+          <div className='grid grid-cols-2 gap-3 col-span-full md:col-span-7'>
             <div className='space-y-3'>
               <svg
                 width='28'
