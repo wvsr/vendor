@@ -45,8 +45,11 @@ function Partner() {
             <button className='btn'>Launch</button>
           </div>
         </header>
-        <div className='space-y-8 text-gray-200 py-24 flex justify-center items-center flex-col'>
-          <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-[500]'>
+        <div className='space-y-5 text-gray-200 py-24 flex justify-center items-center flex-col'>
+          <div className='w-fit px-3 py-2 rounded-3xl font-semibold bg-[#041C39] text-[#0085D6] text-sm'>
+            PARTNER PROGRAM
+          </div>
+          <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-center font-[600]'>
             Earn money doing <br /> with AI plugins
           </h1>
           <p className='text-center text-sm sm:text-base md:text-lg opacity-70 max-w-xl mx-auto'>

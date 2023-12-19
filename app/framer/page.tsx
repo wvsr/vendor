@@ -101,7 +101,7 @@ function Framer() {
           </div>
         </header>
         <div className='space-y-8 text-gray-200 py-24'>
-          <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-8xl text-center font-[500]'>
+          <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-center font-[600]'>
             The internet is <br /> your canvas.
           </h1>
           <p className='text-center text-sm md:text-lg opacity-60'>
