@@ -87,6 +87,43 @@ function Framer() {
           </button>
         </div>
       </section>
+      <section className='bg-[#F9D762] py-14 px-12'>
+        <div className='max-w-6xl mx-auto grid grid-cols-12 wrapper'>
+          <div className='col-span-full md:col-span-5'>
+            <p className='font-semibold text-xl md:text-4xl'>
+              Subscribe to Al for an instantly better inbox
+            </p>
+          </div>
+          <div className='col-span-full md:col-span-7'>
+            <div className='space-y-3'>
+              <div className='py-2 w-full bg-transparent text-lg border-b border-black flex gap-3'>
+                <input
+                  type='text'
+                  className='w-full outline-none bg-transparent placeholder:text-gray-700 placeholder:font-medium'
+                  placeholder='Enter your email'
+                />
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='30'
+                  height='30'
+                  viewBox='0 0 56 57'
+                  fill='none'
+                >
+                  <path
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M13.6351 11.2202L13.7664 29.5663H38.4711V29.4351L26.0864 19.979L28.9231 16.8613L46.375 31.5412L28.9231 46.2202L26.0872 43.1035L38.4711 33.5887V33.5161H9.625V11.2202H13.6351Z'
+                    fill='black'
+                  />
+                </svg>
+              </div>
+              <p className='text-sm'>
+                By clicking “Submit” you agree to our TOS and Privacy Policy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </main>
   )
