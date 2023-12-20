@@ -33,12 +33,10 @@ function Partner() {
           </div>
           <div className='hidden md:block'>
             <div className='flex gap-3 text-[#8B8B8B]'>
-              <Link href='#'>Features</Link>
-              <Link href='#'>Resources</Link>
-              <Link href='#'>Community</Link>
-              <Link href='#'>Customers</Link>
-              <Link href='#'>Enterprise</Link>
-              <Link href='#'>Pricing</Link>
+              <Link href='/plugin'>Plugins</Link>
+              <Link href='/newsletter'>Newsletter</Link>
+              <Link href='/community'>Community</Link>
+              <Link href='/partner'>Partners</Link>
             </div>
           </div>
           <div>

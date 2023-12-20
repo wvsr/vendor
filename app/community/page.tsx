@@ -88,12 +88,10 @@ function Framer() {
           </div>
           <div className='hidden md:block'>
             <div className='flex gap-3 text-[#8B8B8B]'>
-              <Link href='#'>Features</Link>
-              <Link href='#'>Resources</Link>
-              <Link href='#'>Community</Link>
-              <Link href='#'>Customers</Link>
-              <Link href='#'>Enterprise</Link>
-              <Link href='#'>Pricing</Link>
+              <Link href='/plugin'>Plugins</Link>
+              <Link href='/newsletter'>Newsletter</Link>
+              <Link href='/community'>Community</Link>
+              <Link href='/partner'>Partners</Link>
             </div>
           </div>
           <div>
@@ -102,10 +100,11 @@ function Framer() {
         </header>
         <div className='space-y-8 text-gray-200 py-24'>
           <h1 className='text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-center font-[600]'>
-            The internet is <br /> your canvas.
+            The <br />
+            Platform.
           </h1>
           <p className='text-center text-sm md:text-lg opacity-60'>
-            Framer is where teams design and publish stunning sites.
+            Combining all AI tools into #1 Platfrom
           </p>
           <form className='w-full wrapper' onSubmit={handleSearch}>
             <div className='max-w-2xl mx-auto w-full bg-white/10 p-2 rounded-xl overflow-hidden'>

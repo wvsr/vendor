@@ -12,6 +12,69 @@ function Framer() {
     e.preventDefault()
   }
 
+  const newsList = [
+    {
+      title: 'The Ethics of AI: Balancing Progress and Responsibility',
+      by: 'Samantha White',
+      desc: 'Experts delve into the ethical considerations surrounding AI development and deployment in society.',
+      tags: ['AI Ethics', 'Society', 'Technology'],
+    },
+    {
+      title: 'AI-Powered Healthcare: Revolutionizing Patient Care',
+      by: 'Michael Adams',
+      desc: 'How AI is transforming healthcare through predictive analytics and personalized treatment plans.',
+      tags: ['AI in Healthcare', 'Healthtech', 'AI'],
+    },
+    {
+      title: 'AI and Data Privacy: Navigating the Challenges Ahead',
+      by: 'Elena Ramirez',
+      desc: 'Addressing the intersection of AI capabilities and the protection of user data and privacy.',
+      tags: ['AI', 'Data Privacy', 'Technology'],
+    },
+    {
+      title: 'AI in Finance: Enhancing Efficiency and Risk Management',
+      by: 'Nathan Foster',
+      desc: 'Exploring the use of AI algorithms in financial institutions for improved decision-making and risk assessment.',
+      tags: ['AI in Finance', 'Fintech', 'AI'],
+    },
+    {
+      title: "The Future of Work: AI's Impact on Employment Landscape",
+      by: 'Sophie Turner',
+      desc: 'Analysing how AI adoption is reshaping jobs and skills requirements across various industries.',
+      tags: ['AI Impact', 'Future of Work', 'Technology'],
+    },
+    {
+      title: 'AI-Powered Customer Service: Redefining User Experience',
+      by: 'David Miller',
+      desc: 'Examining the role of AI chatbots and virtual assistants in revolutionizing customer service interactions.',
+      tags: ['AI in Customer Service', 'User Experience', 'AI'],
+    },
+    {
+      title: 'AI and Climate Change: Leveraging Technology for Sustainability',
+      by: 'Emma Clark',
+      desc: 'How AI applications are aiding in climate research, resource management, and renewable energy.',
+      tags: ['AI for Sustainability', 'Climate Change', 'Technology'],
+    },
+    {
+      title: 'AI and Cybersecurity: Defending Against Evolving Threats',
+      by: 'Andrew Scott',
+      desc: 'The use of AI in bolstering cybersecurity measures to counter sophisticated cyber threats.',
+      tags: ['AI in Cybersecurity', 'Security', 'AI'],
+    },
+    {
+      title: 'AI in Education: Personalized Learning and Adaptive Systems',
+      by: 'Rachel Williams',
+      desc: 'Exploring how AI is reshaping education through adaptive learning platforms and personalized curriculums.',
+      tags: ['AI in Education', 'EdTech', 'AI'],
+    },
+    {
+      title: 'AI in Autonomous Vehicles: Redefining Transportation',
+      by: 'Jack Thompson',
+      desc: 'The role of AI algorithms in enabling safe and efficient autonomous driving technology.',
+      tags: ['AI in Transportation', 'Autonomous Vehicles', 'AI'],
+    },
+  ]
+
   return (
     <main className='bg-black'>
       <section className='hero'>
@@ -30,12 +93,10 @@ function Framer() {
           </div>
           <div className='hidden md:block'>
             <div className='flex gap-3 text-[#8B8B8B]'>
-              <Link href='#'>Features</Link>
-              <Link href='#'>Resources</Link>
-              <Link href='#'>Community</Link>
-              <Link href='#'>Customers</Link>
-              <Link href='#'>Enterprise</Link>
-              <Link href='#'>Pricing</Link>
+              <Link href='/plugin'>Plugins</Link>
+              <Link href='/newsletter'>Newsletter</Link>
+              <Link href='/community'>Community</Link>
+              <Link href='/partner'>Partners</Link>
             </div>
           </div>
           <div>
@@ -73,6 +134,63 @@ function Framer() {
           className='w-full h-auto wrapper'
         />
       </section>
+      <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
+        <h2 className='md:text-2xl text-xl font-bold'>Insights</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+          {newsList.slice(4, 7).map((news, i) => {
+            return (
+              <div key={i} className='space-y-1'>
+                <Image
+                  src={'https://random.imagecdn.app/250/150' + '?' + i + 333}
+                  alt='news'
+                  width={500}
+                  height={350}
+                  className='rounded-md'
+                />
+                <p className='text-lg font-semibold'>{news.title}</p>
+                <p className='text-sm opacity-70'>{news.by}</p>
+                <p className='text-sm opacity-70'>{news.desc}</p>
+              </div>
+            )
+          })}
+        </div>
+        <div className='flex justify-center w-full'>
+          <button className='px-3 py-2 rounded-md border border-gray-200 text-gray-200 text-sm font-semibold'>
+            More Insights
+          </button>
+        </div>
+      </section>
+      <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
+        <h2 className='md:text-2xl text-xl font-bold'>Maker Stories</h2>
+        <div className='grid grid-cols-12 gap-4'>
+          <div className='col-span-7'>
+            <Image
+              src={'https://random.imagecdn.app/500/400?243243'}
+              alt='news'
+              className='rounded-md max-h-96 h-full w-full'
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className='col-span-5 space-y-3'>
+            <h3 className='text-lg md:text-2xl font-semibold'>
+              Google DeepMind AI reveals potential for thousands of new
+              materials
+            </h3>
+            <p className='text-sm opacity-70'>By Rebecca Ackermann</p>
+            <p className='text-base opacity-70'>
+              Google DeepMind has used artificial intelligence (AI) to predict
+              the structure of more than 2 million new materials, a breakthrough
+              it said could soon be used to improve real-world technologies.
+            </p>
+          </div>
+        </div>
+        <div className='flex justify-center w-full'>
+          <button className='px-3 py-2 rounded-md border border-gray-200 text-gray-200 text-sm font-semibold'>
+            More Maker Stories
+          </button>
+        </div>
+      </section>
       <section className='bg-[#0FA958] py-24 px-12'>
         <div className='max-w-5xl mx-auto space-y-6 text-center'>
           <p className='text-sm font-medium'>Meet us in the browser</p>
@@ -85,6 +203,58 @@ function Framer() {
           <p className='font-medium'>Dylan Field, Co-Founder & CEO</p>
           <button className='px-4 py-2 5 rounded-xl border-2 border-black font-semibold'>
             Read the article
+          </button>
+        </div>
+      </section>
+      <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
+        <h2 className='md:text-2xl text-xl font-bold'>Developer deep dives</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+          {newsList.slice(3, 6).map((news, i) => {
+            return (
+              <div key={i} className='space-y-1'>
+                <Image
+                  src={'https://random.imagecdn.app/250/150' + '?' + i + 1300}
+                  alt='news'
+                  width={500}
+                  height={350}
+                  className='rounded-md'
+                />
+                <p className='text-lg font-semibold'>{news.title}</p>
+                <p className='text-sm opacity-70'>{news.by}</p>
+                <p className='text-sm opacity-70'>{news.desc}</p>
+              </div>
+            )
+          })}
+        </div>
+        <div className='flex justify-center w-full'>
+          <button className='px-3 py-2 rounded-md border border-gray-200 text-gray-200 text-sm font-semibold'>
+            More Developer Stories
+          </button>
+        </div>
+      </section>
+      <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
+        <h2 className='md:text-2xl text-xl font-bold'>Inside Figma</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+          {newsList.slice(0, 3).map((news, i) => {
+            return (
+              <div key={i} className='space-y-1'>
+                <Image
+                  src={'https://random.imagecdn.app/250/150' + '?' + i + 100}
+                  alt='news'
+                  width={500}
+                  height={350}
+                  className='rounded-md'
+                />
+                <p className='text-lg font-semibold'>{news.title}</p>
+                <p className='text-sm opacity-70'>{news.by}</p>
+                <p className='text-sm opacity-70'>{news.desc}</p>
+              </div>
+            )
+          })}
+        </div>
+        <div className='flex justify-center w-full'>
+          <button className='px-3 py-2 rounded-md border border-gray-200 text-gray-200 text-sm font-semibold'>
+            More Inside Figma
           </button>
         </div>
       </section>
@@ -123,6 +293,44 @@ function Framer() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
+        <h2 className='md:text-2xl text-xl font-bold'>Explore all</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+          {newsList.map((news, i) => {
+            return (
+              <div key={i} className='space-y-1'>
+                <Image
+                  src={'https://random.imagecdn.app/250/150' + '?' + i}
+                  alt='news'
+                  width={500}
+                  height={350}
+                  className='rounded-md'
+                />
+                <p className='text-lg font-semibold'>{news.title}</p>
+                <p className='text-sm opacity-70'>{news.by}</p>
+                <p className='text-sm opacity-70'>{news.desc}</p>
+                <div className='flex gap-2'>
+                  {news.tags.map((e, i) => {
+                    return (
+                      <div
+                        className='w-fit rounded-md border border-[#666666] px-1.5 py-1 text-xs'
+                        key={i}
+                      >
+                        {e}
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+        <div className='flex justify-center w-full'>
+          <button className='px-3 py-2 rounded-md border border-gray-200 text-gray-200 text-sm font-semibold'>
+            Load more
+          </button>
         </div>
       </section>
       <section className='py-20 px-12 text-gray-200'>
