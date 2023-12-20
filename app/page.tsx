@@ -38,7 +38,7 @@ export default function Home() {
     e.preventDefault()
   }
   return (
-    <main className='search_page h-[92vh] xl:h-screen w-full search_background flex flex-col px-2'>
+    <main className='search_page h-[90vh] xl:h-screen w-full search_background flex flex-col px-2'>
       <header className='flex justify-between items-center py-4 px-5'>
         <div className='flex gap-3'>
           <div className='hidden sm:block'>
@@ -75,7 +75,7 @@ export default function Home() {
           </button>
         </div>
       </header>
-      <div className='flex flex-col max-w-5xl mx-auto justify-center items-center flex-1 w-full'>
+      <div className='flex flex-col max-w-5xl mx-auto justify-center items-center flex-1 w-full pb-10'>
         <Image
           src={Logo}
           alt='logo'

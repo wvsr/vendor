@@ -73,7 +73,7 @@ function Framer() {
   return (
     <main className='bg-black'>
       <section className='hero'>
-        <header className='flex justify-between items-center py-2.5 px-3 border-b border-gray-900 '>
+        <header className='flex justify-between items-center py-2.5 px-3'>
           <div className='flex gap-3'>
             <div className='hidden md:block'>
               <Link href='/'>
@@ -97,7 +97,7 @@ function Framer() {
             </div>
           </div>
           <div>
-            <button className='btn'>Launch</button>
+            <button className='btn_header'>Launch</button>
           </div>
         </header>
         <div className='space-y-8 text-gray-200 py-24'>
