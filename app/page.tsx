@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '@/public/logo.png'
+import Logo from '@/public/large_logo.png'
 import SmallLogo from '@/public/small_logo.png'
 import { useState } from 'react'
 
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
           </div>
         </form>
-        <div className='gap-3 flex-wrap justify-center mt-4 hidden sm:flex'>
+        <div className='gap-3 flex-wrap justify-center mt-4 hidden sm:flex max-w-[42rem] mx-auto w-full'>
           {suggestions.map((e, i) => (
             <div
               key={i}
@@ -118,7 +118,8 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className='gap-3 flex-wrap justify-start mt-4 flex sm:hidden w-full px-4'>
+        {/* it only showed on smartphone */}
+        <div className='gap-3 flex-wrap justify-start mt-4 flex sm:hidden w-full'>
           {suggestions.slice(0, 4).map((e, i) => (
             <div
               key={i}

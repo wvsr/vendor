@@ -126,3 +126,10 @@ h6 {
     rgba(0, 6, 19, 0.5018382352941176) 100%
   );
 }
+
+.login_background {
+  background: url('./../public/dashboard/login_background.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
