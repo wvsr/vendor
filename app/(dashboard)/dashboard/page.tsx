@@ -5,6 +5,7 @@ import AppTour from '@/public/dashboard/app_tour.png'
 import BrowsePlugin from '@/public/dashboard/browse_plugins.png'
 import CreateGpt from '@/public/dashboard/create_gpt.png'
 import Tutorial from '@/public/dashboard/tutorial.png'
+import AppScreenShot from '@/public/dashboard/screenshot.png'
 function Dashboard() {
   return (
     <main>
@@ -166,6 +167,23 @@ function Dashboard() {
                 <Image src={BrowsePlugin} alt='button' />
                 <Image src={CreateGpt} alt='button' />
                 <Image src={Tutorial} alt='button' />
+              </div>
+            </div>
+            <div className='space-y-5 mt-5'>
+              <div className='flex justify-between gap-4'>
+                <h3 className='text-lg font-semibold'>All</h3>
+                <select
+                  name='model'
+                  className='bg-transparent border-none text-[#888888] text-sm'
+                >
+                  <option value=''>Last viewed by me</option>
+                  <option value=''>ChatGpt 4</option>
+                </select>
+              </div>
+              <div className='flex gap-4'>
+                <div className='px-4 py-4 rounded-md bg-[#282828]'>
+                  <Image src={AppScreenShot} alt='AppScreenShot' />
+                </div>
               </div>
             </div>
           </div>
