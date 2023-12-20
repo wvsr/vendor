@@ -129,7 +129,7 @@ function Framer() {
       </section>
       <section className='wrapper py-12 mx-auto max-w-6xl space-y-4 text-gray-200'>
         <Image src={HeroImage} alt='HeroImage' className='w-full h-auto' />
-        <div className='grid grid-cols-12 gap-10'>
+        <div className='grid grid-cols-12 gap-y-10 md:gap-10'>
           <div className='col-span-full sm:col-span-5 space-y-4'>
             <h3 className='text-xl md:text-4xl font-semibold'>
               Dev Mode: Building a dashboard that works better for people
