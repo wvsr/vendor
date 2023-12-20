@@ -19,11 +19,13 @@ function Terms() {
       <header className='flex justify-between items-start py-2.5 px-3 border-b border-gray-900'>
         <div className='flex gap-3 w-full'>
           <div className='pt-3'>
-            <Image src={Logo} alt='logo' width={200} />
+            <Link href={'/'}>
+              <Image src={Logo} alt='logo' width={130} />
+            </Link>
           </div>
         </div>
         <div>
-          <button className='btn'>Launch</button>
+          <button className='btn_header'>Launch</button>
         </div>
       </header>
 

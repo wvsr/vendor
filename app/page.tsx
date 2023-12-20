@@ -43,7 +43,7 @@ export default function Home() {
         <div className='flex gap-3'>
           <div className='hidden sm:block'>
             <ul className='flex gap-3 justify-center text-center flex-wrap'>
-              {headerLinks.map((e, i) => (
+              {mobileHeaderLinks.map((e, i) => (
                 <Link
                   href={e.link}
                   key={i}
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <div className='flex gap-3'>
-          <button className='btn text-sm'>
+          <button className='btn_header text-sm'>
             <span className='block lg:hidden'>Sing up</span>
             <span className='hidden lg:block'>Launch</span>
           </button>

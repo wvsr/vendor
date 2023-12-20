@@ -18,7 +18,7 @@ import NoCodeWebsiteTemplate from '@/public/framer/1.png'
 import Slack from '@/public/framer/slack.png'
 import DiscoverAnalyze from '@/public/framer/4.png'
 import Link from 'next/link'
-import Footer from '@/components/framer/Footer'
+import Footer from '@/components/Footer'
 import SiteManagementSvg from '@/components/siteManagementSvg'
 import ProductOfTheDay from '@/components/ProductOfTheDay'
 
