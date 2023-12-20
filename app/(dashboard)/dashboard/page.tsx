@@ -35,7 +35,7 @@ function Dashboard() {
         </div>
       </header>
       <div className='grid grid-cols-12'>
-        <aside className='col-span-2 bg-[#111111] border-t border-[#1D1D1D] min-h-[91vh] px-4 py-3 '>
+        <aside className='hidden md:block md:col-span-3 lg:col-span-2 bg-[#111111] border-t border-[#1D1D1D] min-h-[91vh] px-4 py-3'>
           <p className='py-3 font-semibold ps-2'>Projects</p>
           <div className='space-y-2 pb-3 border-b border-[#333333]'>
             <button className='flex gap-2 items-center text-sm text-[#888888] font-semibold hover:bg-[#2B2B2B] w-full px-2 py-2 rounded-md'>
@@ -158,11 +158,11 @@ function Dashboard() {
             </button>
           </div>
         </aside>
-        <div className='col-span-10 px-3 py-2'>
+        <div className='col-span-12 md:col-span-9 lg:col-span-10 px-3 py-2'>
           <div className='max-w-4xl mx-auto'>
             <div className='space-y-5 mt-5'>
               <h3 className='text-lg font-semibold'>Get Started</h3>
-              <div className='flex gap-4'>
+              <div className='flex gap-4 flex-wrap'>
                 <Image src={AppTour} alt='button' />
                 <Image src={BrowsePlugin} alt='button' />
                 <Image src={CreateGpt} alt='button' />
