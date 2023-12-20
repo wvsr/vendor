@@ -127,12 +127,81 @@ function Framer() {
           </form>
         </div>
       </section>
-      <section className='wrapper'>
-        <Image
-          src={HeroImage}
-          alt='HeroImage'
-          className='w-full h-auto wrapper'
-        />
+      <section className='wrapper py-12 mx-auto max-w-6xl space-y-4 text-gray-200'>
+        <Image src={HeroImage} alt='HeroImage' className='w-full h-auto' />
+        <div className='grid grid-cols-12 gap-10'>
+          <div className='col-span-full sm:col-span-5 space-y-4'>
+            <h3 className='text-xl md:text-4xl font-semibold'>
+              Dev Mode: Building a dashboard that works better for people
+            </h3>
+            <p className='text-sm opacity-70'>
+              How do you create a home for developers in a AI tool? The Dev Mode
+              team shares their early pivot away from a codegen-first approach,
+              the acquisition that accelerated their efforts, and what it…
+            </p>
+            <div className='flex gap-2'>
+              {newsList[0].tags.map((e, i) => {
+                return (
+                  <div
+                    className='w-fit rounded-md border border-[#666666] px-1.5 py-1 text-xs'
+                    key={i}
+                  >
+                    {e}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className='col-span-full sm:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 space-y-3'>
+            <div className='rounded-md px-3 py-2 bg-[#FA956B] text-black space-y-3'>
+              <p className='text-lg sm:text-3xl font-semibold'>
+                {newsList[0].title}
+              </p>
+              <p className='text-sm font-semibold'>{newsList[0].by}</p>
+              <p className='text-sm font-semibold'>{newsList[0].desc}</p>
+              <div className='flex gap-2'>
+                {newsList[0].tags.map((e, i) => {
+                  return (
+                    <div
+                      className='w-fit rounded-md border border-black px-1.5 py-1 text-xs'
+                      key={i}
+                    >
+                      {e}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+            {newsList.slice(5, 6).map((news, i) => {
+              return (
+                <div key={i} className='space-y-1'>
+                  <Image
+                    src={'https://random.imagecdn.app/250/150' + '?' + i}
+                    alt='news'
+                    width={500}
+                    height={350}
+                    className='rounded-md'
+                  />
+                  <p className='text-lg font-semibold'>{news.title}</p>
+                  <p className='text-sm opacity-70'>{news.by}</p>
+                  <p className='text-sm opacity-70'>{news.desc}</p>
+                  <div className='flex gap-2'>
+                    {news.tags.map((e, i) => {
+                      return (
+                        <div
+                          className='w-fit rounded-md border border-[#666666] px-1.5 py-1 text-xs'
+                          key={i}
+                        >
+                          {e}
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
       </section>
       <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
         <h2 className='md:text-2xl text-xl font-bold'>Insights</h2>
@@ -163,7 +232,7 @@ function Framer() {
       <section className='wrapper py-12 mx-auto max-w-6xl text-gray-200 space-y-4'>
         <h2 className='md:text-2xl text-xl font-bold'>Maker Stories</h2>
         <div className='grid grid-cols-12 gap-4'>
-          <div className='col-span-7'>
+          <div className='col-span-full sm:col-span-7'>
             <Image
               src={'https://random.imagecdn.app/500/400?243243'}
               alt='news'
@@ -172,7 +241,7 @@ function Framer() {
               height={100}
             />
           </div>
-          <div className='col-span-5 space-y-3'>
+          <div className='col-span-full sm:col-span-5 space-y-3'>
             <h3 className='text-lg md:text-2xl font-semibold'>
               Google DeepMind AI reveals potential for thousands of new
               materials
